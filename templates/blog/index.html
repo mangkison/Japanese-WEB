@@ -1,0 +1,190 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>title</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Poppins&family=Raleway&display=swap" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.css" />
+</head>
+
+<body class="portfolio-page">
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="#intro" class="logo d-flex align-items-center">
+        <h1 class="sitename">SON</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#intro" class="active">自己紹介</a></li>
+          <li><a href="#history">活動履歴</a></li>
+          <li><a href="#projects">プロジェクト紹介</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <div id="fullpage">
+    <div class="section" data-anchor="intro" style="background-color: #1a1a1a;">
+      <main class="main">
+        <div class="page-title" data-aos="fade">
+          <div class="heading">
+            <div class="container">
+              <div class="row d-flex justify-content-center text-center">
+                <div class="col-lg-8">
+                  <h1>Portfolio</h1>
+                  <p class="mb-0">日本語で紹介する私</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="container d-flex flex-column align-items-center justify-content-center" style="padding: 40px 20px;">
+        <img src="{% static 'assets/img/손윤기.jpg' %}" alt="My Photo" style="width: 180px; border-radius: 50%; margin-bottom: 20px;">
+        <div style="max-width: 700px;">
+          <h2 style="font-size: 36px; margin-bottom: 10px;">自己紹介</h2>
+          <p style="font-size: 20px; line-height: 1.8;">
+            こんにちは！私はプログラマーを目指している大学生で、主に
+            <span style="color: #ffcc00; font-weight: bold;">Python</span> を使ってデータを扱ったり、
+            <span style="color: #00aaff; font-weight: bold;">JavaScript</span> を活用して
+            <span style="color: #ff8888; font-weight: bold;">AIサービス</span> や
+            <span style="color: #fd7e14; font-weight: bold;">web開発</span>に関するプロジェクトを行ってきました。<br>
+            最近は <span style="color: #dfe0e1; font-weight: bold;">AI関連の技術</span> を学びながら、実用的なサービスを作ることに力を入れています。<br>
+            旅行が趣味で、新しいことに挑戦するのが好きな私は、グローバルな環境で視野を広げながら成長していけるエンジニアを目指しています。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" data-anchor="history" style="background-color: #000000; color: #fff;">
+      <div class="container py-5">
+        <h2 style="font-size: 48px; margin-bottom: 40px;">活動履歴</h2>
+        <ul style="font-size: 28px;">
+          <li>2016年 光教高校 卒業</li>
+          <li>2017年 国立韓国交通大学 環境工学科 入学</li>
+          <li>2018年～2019年11月 第50師団 化学兵 兵長として満期除隊</li>
+          <li>2022年 韓国外国語大学 数学科 編入</li>
+          <li>2023年7月～9月 ヒューマンアカデミー日本語学校 短期研修</li>
+          <li>2024年1月～9月 ワーキングホリデイで日本生活</li>
+          <li>2024年10月〜2025年3月 WASS UP 5 AI MODEL BOOT-CAMP</li>
+          <li>2026年2月 卒業予定</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section" data-anchor="projects" style="background-color: #000000; color: #fff;">
+      <div class="container py-5">
+        <h1 class="text-center mb-5">プロジェクト紹介</h1>
+        <div class="row">
+          <div class="col-md-6 d-flex flex-column justify-content-center" style="font-size: 20px;">
+            <p>開発したプロジェクトは以下のGitHubで公開しています：<br>
+              <a href="https://github.com/mangkison?tab=repositories" target="_blank" style="color: #00acee;">mangkison</a>
+            </p>
+            <p>ご連絡は以下のメールアドレスまでお願いします：<br>
+              <a href="mailto:thsbdsrl2966@naver.com" style="color: #00acee;">thsbdsrl2966@naver.com</a>
+            </p>
+            <p>その他の学習プロジェクトも今後追加していく予定です。</p>
+          </div>
+
+        <div class="col-md-6">
+        <div class="row g-4">
+
+    <!-- 1번 카드 -->
+    <div class="col-6 text-center">
+      <div style="background-color: #222; width: 100%; padding-top: 85%; position: relative; border-radius: 10px;">
+        <img src="{% static 'assets/img/웹.png' %}" alt="写真1"
+             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+                    object-fit: cover; object-position: left center; border-radius: 10px;">
+      </div>
+      <p style="margin-top: 10px; color: #ccc;">今のWebサイト</p>
+    </div>
+
+    <!-- 2번 카드 -->
+    <div class="col-6 text-center">
+      <div style="background-color: #222; width: 100%; padding-top: 85%; position: relative; border-radius: 10px;">
+        <img src="{% static 'assets/img/1.png' %}" alt="写真2"
+             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+                    object-fit: cover; object-position: left center; border-radius: 10px;">
+      </div>
+      <p style="margin-top: 10px; color: #ccc;">AIセキュリティプロジェクト</p>
+    </div>
+
+    <!-- 3번 카드 -->
+    <div class="col-6 text-center">
+      <div style="background-color: #222; width: 100%; padding-top: 80%; position: relative; border-radius: 10px;">
+        <img src="{% static 'assets/img/사진3.png' %}" alt="写真3"
+             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+                    object-fit: cover; object-position: left center; border-radius: 10px;">
+      </div>
+      <p style="margin-top: 10px; color: #ccc;">済州島発電量予測（実験）</p>
+    </div>
+
+    <!-- 4번 카드 -->
+    <div class="col-6 text-center">
+      <div style="background-color: #222; width: 100%; padding-top: 88%; position: relative; border-radius: 10px;">
+        <img src="{% static 'assets/img/사진4.png' %}" alt="写真4"
+             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+                    object-fit: cover; object-position: left center; border-radius: 10px;">
+      </div>
+      <p style="margin-top: 10px; color: #ccc;">青少年向けチャットボット</p>
+    </div>
+
+  </div>
+</div>
+
+
+        <div class="container mt-5 text-center">
+          <div class="copyright">
+            <span>Copyright ©</span> <strong class="px-1 sitename">Personal</strong> <span>All Rights Reserved</span>
+          </div>
+          <div class="credits">
+            Designed by <a href="https://bootstrapmade.com/" target="_blank">BootstrapMade</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <div id="preloader"></div>
+
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/typed.js/typed.umd.js' %}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.js"></script>
+  <script>
+    new fullpage('#fullpage', {
+      autoScrolling: true,
+      navigation: true,
+      scrollHorizontally: true,
+      anchors: ['intro', 'history', 'projects'],
+      menu: '#navmenu'
+    });
+  </script>
+  <script src="{% static 'assets/js/main.js' %}"></script>
+</body>
+</html>
