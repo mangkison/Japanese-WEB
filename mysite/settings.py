@@ -28,6 +28,8 @@ DEBUG = False
 ALLOWED_HOSTS = ['15.164.94.230', 'localhost']
 
 
+import os
+
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [

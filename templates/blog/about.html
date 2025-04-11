@@ -1,0 +1,94 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>information</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+</head>
+
+<body class="portfolio-page">
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="#intro" class="logo d-flex align-items-center">
+        <h1 class="sitename">SON</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="{% url 'home' %}" class="active">自己紹介</a></li>
+          <li><a href="{% url 'home' %}">活動履歴</a></li>
+          <li><a href="{% url 'home' %}">プロジェクト紹介</a></li>
+            <li class="external-menu">
+           <li><a href="{% url 'about' %}">このwebページについて</a></li>
+
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+<!--머리-->
+    <div class="section" data-anchor="intro" style="background-color: #1a1a1a;">
+<main class="main">
+  <div class="heading bg-dark py-5">
+    <div class="container">
+      <div class="row d-flex justify-content-center text-center">
+        <div class="col-lg-8">
+          <h1 class="text-white">information</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+      </main>
+<section>
+  <div class="section" id="architecture">
+    <div class="container text-center">
+      <h2>System Architecture</h2>
+      <img src="{% static 'assets/img/ARCHITECTURE.png' %}" alt="Architecture Diagram" class="img-fluid" />
+    </div>
+  </div>
+</section>
+
+
+    <section id="history" class="section bg-black text-white">
+      <div class="container py-5">
+        <h2>Patch-Notes</h2>
+        <ul class="fs-5">
+          <!-- 패치 버전 -->
+            <h3>ver1.1<h3>
+                <p>「基本的なWebフレームワークを完成させました。」<br></p>
+                <h3>ver1.2<h3>
+                    <p>「profile pageを作成しました。」<br></p>
+                    <p>「ナビメニューを作成しました。」</p>
+                    <h3>ver1.3<h3>
+                        <p>「GitHubからコードを取得し、自動的にAWSにデプロイされるように設定しました。」<br></p>
+                            <h3>ver1.4<h3>
+                                <p>「インフォメーションページを作成しました。」</p>
+
+        </ul>
+      </div>
+  </main>
+
+  <footer >
+        <div class="container mt-5 text-center">
+          <div class="copyright">
+            <span>Copyright ©</span> <strong class="px-1 sitename">Personal</strong> <span>All Rights Reserved</span>
+          </div>
+          <div class="credits">
+            Designed by <a href="https://bootstrapmade.com/" target="_blank">BootstrapMade</a>
+  </footer>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/js/main.js' %}"></script>
+</body>
+</html>
